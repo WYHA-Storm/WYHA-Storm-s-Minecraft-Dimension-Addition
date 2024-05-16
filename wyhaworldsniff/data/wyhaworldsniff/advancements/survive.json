@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
+    },
+    "title": {
+      "text": "This place seems safe",
+      "color": "light gray"
+    },
+    "description": {
+      "text": "Survive for 2 days in the dimension.",
+      "color": "orange"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "wyhaworldsniff:lagmorphia",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "dimension": "wyhaworldsniff:lagmorphia"
+            }
+          },
+          {
+            "condition": "minecraft:time_check",
+            "value": 48000
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ]
+}

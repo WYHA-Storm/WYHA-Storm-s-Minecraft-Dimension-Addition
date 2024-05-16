@@ -1,0 +1,315 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "has_precipitation": true,
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 65535,
+    "fog_color": 65535,
+    "water_color": 65535,
+    "water_fog_color": 65535,
+    "grass_color": 65535,
+    "foliage_color": 65535,
+    "ambient_sound": "minecraft:block.beacon.ambient",
+    "mood_sound": {
+      "sound": "minecraft:entity.lightning_bolt.thunder",
+      "tick_delay": 200,
+      "block_search_extent": 0,
+      "offset": 0
+    },
+    "music": {
+      "sound": "minecraft:wyhaworldsniff.calm",
+      "min_delay": 0,
+      "max_delay": 0,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:electric_spark"
+      },
+      "probability": 0.005
+    }
+  },
+  "spawners": {
+    "creature": [
+      {
+        "type": "minecraft:rabbit",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:allay",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 5
+      }
+    ],
+    "monster": [
+      {
+        "type": "minecraft:stray",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ],
+    "liquid": [
+      "minecraft:cave",
+      "minecraft:canyon",
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "features": [
+    [
+      {
+        "feature": {
+          "type": "minecraft:lake",
+          "config": {
+            "fluid": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:water",
+                "Properties": {
+                  "level": "0"
+                }
+              }
+            },
+            "barrier": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:rarity_filter",
+            "chance": 20
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+          },
+          {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "up",
+            "max_steps": 32,
+            "target_condition": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "#minecraft:logs"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [
+      {
+        "feature": {
+          "type": "minecraft:block_pile",
+          "config": {
+            "state_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:ochre_froglight",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:block_pile",
+          "config": {
+            "state_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:sea_lantern"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:block_pile",
+          "config": {
+            "state_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:shroomlight"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:block_pile",
+          "config": {
+            "state_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:deepslate_diamond_ore"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          }
+        ]
+      },
+      {
+        "feature": "wyhaworldsniff:mega_carrot",
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 32
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:surface_water_depth_filter",
+            "max_water_depth": 0
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          },
+          {
+            "type": "minecraft:biome"
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "state": {
+                "Name": "minecraft:dark_oak_sapling",
+                "Properties": {
+                  "stage": "1"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_copper"
+    ],
+    [
+      "minecraft:spring_water"
+    ],
+    [
+      "minecraft:flower_swamp",
+      "minecraft:patch_grass_badlands",
+      "minecraft:flower_cherry",
+      "minecraft:trees_cherry",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:bamboo_light"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}
