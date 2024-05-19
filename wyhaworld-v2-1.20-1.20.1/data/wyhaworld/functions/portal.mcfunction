@@ -19,3 +19,5 @@ execute in wyhaworld:lagmorphian_dungeons positioned as @e[nbt={OnGround:1b}] if
 schedule function wyhaworld:portal_end 1s append
 
 schedule clear wyhaworld:portal
+
+## Optimise later

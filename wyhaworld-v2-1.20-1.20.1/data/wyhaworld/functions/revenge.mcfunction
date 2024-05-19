@@ -14,26 +14,11 @@ execute in wyhaworld:lagmorphia positioned as @e[type=item,nbt={Item:{id:"minecr
 
 execute in wyhaworld:lagmorphia positioned as @e[type=item,nbt={Item:{id:"minecraft:rabbit_foot"}},limit=1,sort=random] run summon minecraft:lightning_bolt
 
-execute as @e[type=lightning_bolt] run effect give @e[team=wyha] regeneration 1 255
+execute as @e[dimension=wyhaworld:lagmorphia,team=wyha] at @s if entity @e[distance=0..4,type=lightning_bolt] run wyhaworld:dimensions/lagmorphia/lightning
 
-execute as @e[type=lightning_bolt] run effect give @e[team=wyha] resistance 1 255
-
-execute as @e[type=lightning_bolt] run effect give @e[team=wyha] slow_falling 1 255
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=rabbit]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[tag=wyha]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=allay]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=villager]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=iron_golem]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=snow_golem]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=stray]
-
-execute in wyhaworld:lagmorphia run team join wyha @e[type=drowned]
+team join wyha @e[type=#wyhaworld:wyha_joiners,dimension=wyhaworld:lagmorphia]
+team join wyha @e[tag=wyha,dimension=wyhaworld:lagmorphia]
 
 schedule clear wyhaworld:revenge
+
+## Optimze Later
