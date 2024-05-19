@@ -14,10 +14,9 @@ execute in wyhaworld:lagmorphia positioned as @e[type=item,nbt={Item:{id:"minecr
 
 execute in wyhaworld:lagmorphia positioned as @e[type=item,nbt={Item:{id:"minecraft:rabbit_foot"}},limit=1,sort=random] run summon minecraft:lightning_bolt
 
-execute as @e[dimension=wyhaworld:lagmorphia,team=wyha] at @s if entity @e[distance=0..4,type=lightning_bolt] run wyhaworld:dimensions/lagmorphia/lightning
+execute in wyhaworld:lagmorphia as @e[team=wyha] at @s if entity @e[distance=0..4,type=lightning_bolt] run wyhaworld:dimensions/lagmorphia/lightning
 
-team join wyha @e[type=#wyhaworld:wyha_joiners,dimension=wyhaworld:lagmorphia]
-team join wyha @e[tag=wyha,dimension=wyhaworld:lagmorphia]
+execute in wyhaworld:lagmorphia run function wyhaworld:dimensions/lagmorphia/teams
 
 schedule clear wyhaworld:revenge
 

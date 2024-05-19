@@ -1,1 +1,1 @@
-execute in wyhaworld:lagmorphia positioned as @e run function wyhaworld:on_load/set_lagmorphia
+execute in wyhaworld:lagmorphia positioned as @a run function wyhaworld:on_load/set_lagmorphia
