@@ -1,5 +1,5 @@
 execute in wyhaworld:lagmorphia positioned as @e run function wyhaworld:dimensions/lagmorphia/set
-
+# Above function may be the issue
 execute in wyhaworld:lagmorphian_dungeons positioned as @e if block ~ ~ ~ minecraft:powder_snow if block ~ ~-1 ~ chiseled_polished_blackstone run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0.5
 
 execute in minecraft:overworld positioned as @e if block ~ ~ ~ minecraft:powder_snow if block ~ ~-1 ~ chiseled_deepslate run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0.5
