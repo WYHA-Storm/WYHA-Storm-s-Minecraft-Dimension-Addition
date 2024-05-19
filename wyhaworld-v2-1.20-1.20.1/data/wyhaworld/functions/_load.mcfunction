@@ -7,7 +7,7 @@ team add wyha
 
 execute in minecraft:overworld run place template wyhaworld:portal ~-3 ~ ~-1
 
-execute in wyhaworld:lagmorphia as @p at @s run function wyhaworld:on_load/init_lagmorphia
+execute in wyhaworld:lagmorphia as @a at @s run function wyhaworld:on_load/init_lagmorphia
 
 bossbar remove wyhaworld:boss
 bossbar add wyhaworld:boss {"text":"MASTER STRAY","color":"aqua"}
