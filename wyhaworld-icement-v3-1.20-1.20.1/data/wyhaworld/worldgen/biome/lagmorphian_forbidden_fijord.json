@@ -1,0 +1,115 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "has_precipitation": false,
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 0,
+    "foliage_color": 0,
+    "ambient_sound": "minecraft:block.beacon.ambient",
+    "mood_sound": {
+      "sound": "minecraft:entity.lightning_bolt.thunder",
+      "tick_delay": 200,
+      "block_search_extent": 0,
+      "offset": 0
+    },
+    "music": {
+      "sound": "minecraft:music.nether.soul_sand_valley",
+      "min_delay": 120,
+      "max_delay": 120,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:electric_spark"
+      },
+      "probability": 0.005
+    }
+  },
+  "spawners": {
+    "creature": [
+      {
+        "type": "minecraft:rabbit",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:allay",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 5
+      }
+    ],
+    "monster": [
+      {
+        "type": "minecraft:stray",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:drowned",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_copper"
+    ],
+    [
+      "minecraft:patch_soul_fire",
+      "minecraft:flower_swamp",
+      "minecraft:patch_grass_badlands",
+      "minecraft:flower_cherry",
+      "minecraft:trees_cherry",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:bamboo_light"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

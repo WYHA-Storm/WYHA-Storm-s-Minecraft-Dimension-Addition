@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_carrot"
+    },
+    "title": {
+      "text": "Lagmorphia",
+      "color": "yellow",
+      "bold": true,
+      "obfuscated": true
+    },
+    "description": {
+      "text": "Enter the new dimension. Hope you had a great landing!",
+      "color": "light blue"
+    },
+    "background": "minecraft:textures/block/gold_block.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "stuff": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "wyhaworld:lagmorphia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stuff"
+    ]
+  ]
+}

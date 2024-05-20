@@ -1,0 +1,7 @@
+{
+  "asset_id": "wyhaworld:storm",
+  "description": {
+    "translate": "trim_pattern.wyhaworld.storm"
+  },
+  "template_item": "minecraft:lightning_rod"
+}

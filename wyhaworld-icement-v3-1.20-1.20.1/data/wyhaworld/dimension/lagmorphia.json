@@ -1,0 +1,72 @@
+{
+  "type": "wyhaworld:lagmorphia",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "wyhaworld:lagmorphia",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "wyhaworld:lagmorphian_plains",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wyhaworld:lagmorphian_woods",
+          "parameters": {
+            "temperature": -0.1,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wyhaworld:lagmorphian_forbidden_fijord",
+          "parameters": {
+            "temperature": -1,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wyhaworld:lagmorphian_river",
+          "parameters": {
+            "temperature": -0.2,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wyhaworld:lagmorphian_peaks",
+          "parameters": {
+            "temperature": -0.3,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}
