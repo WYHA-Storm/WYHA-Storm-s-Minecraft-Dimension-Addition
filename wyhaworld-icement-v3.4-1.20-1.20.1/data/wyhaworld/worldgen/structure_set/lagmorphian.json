@@ -1,0 +1,24 @@
+{
+  "structures": [
+    {
+      "structure": "wyhaworld:hut",
+      "weight": 25
+    },
+    {
+      "structure": "wyhaworld:arena",
+      "weight": 1
+    },
+    {
+      "structure": "wyhaworld:village_lagmorphia",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 252729314,
+    "frequency_reduction_method": "legacy_type_2",
+    "frequency": 0.25,
+    "spacing": 6,
+    "separation": 5
+  }
+}

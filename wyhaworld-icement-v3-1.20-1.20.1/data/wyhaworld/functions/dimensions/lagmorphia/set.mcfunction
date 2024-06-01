@@ -1,2 +1,0 @@
-execute if block ~ ~ ~ minecraft:powder_snow if block ~ ~-1 ~ chiseled_deepslate run functuon wyhaworld:dimensions/lagmorphia/chiseled_deepslate
-execute if block ~ ~ ~ minecraft:powder_snow if block ~ ~-1 ~ chiseled_polished_blackstone run functuon wyhaworld:dimensions/lagmorphia/chiseled_polished_blackstone
