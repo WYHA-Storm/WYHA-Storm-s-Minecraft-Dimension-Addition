@@ -1,0 +1,32 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "wyhaworld:village/lagmorphia/street/straight",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "wyhaworld:village/lagmorphia/street/x",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "wyhaworld:village/lagmorphia/street/fork",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

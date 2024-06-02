@@ -1,1 +1,0 @@
-schedule function wyhaworld:portal_start 5s append
