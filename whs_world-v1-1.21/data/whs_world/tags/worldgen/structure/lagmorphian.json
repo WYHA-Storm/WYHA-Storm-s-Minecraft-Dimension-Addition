@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "whs_world:hut",
+    "whs_world:arena",
+    "whs_world:village_lagmorphia",
+    "whs_world:dungeon"
+  ]
+}

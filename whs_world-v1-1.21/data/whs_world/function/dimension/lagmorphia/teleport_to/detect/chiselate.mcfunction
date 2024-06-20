@@ -1,0 +1,1 @@
+execute at @e in minecraft:overworld if block ~ ~-1 ~ chiseled_deepslate run function whs_world:dimension/lagmorphia/teleport_to/detect/snow

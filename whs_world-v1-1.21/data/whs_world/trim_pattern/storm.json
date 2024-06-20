@@ -1,0 +1,7 @@
+{
+  "asset_id": "whs_world:storm",
+  "description": {
+    "translate": "Storm Armor Trim"
+  },
+  "template_item": "minecraft:lightning_rod"
+}

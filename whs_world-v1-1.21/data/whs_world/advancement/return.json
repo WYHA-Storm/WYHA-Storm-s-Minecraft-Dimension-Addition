@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:powder_snow_bucket"
+    },
+    "title": {
+      "text": "Hey! You're back!",
+      "color": "gold"
+    },
+    "description": {
+      "text": "Return to the Overworld.",
+      "color": "yellow"
+    },
+    "frame": "challenge",
+    "show_toast": true
+  },
+  "parent": "whs_world:lagmorphia",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "whs_world:lagmorphia",
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ]
+}

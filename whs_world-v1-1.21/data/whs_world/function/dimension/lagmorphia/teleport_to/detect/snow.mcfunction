@@ -1,0 +1,1 @@
+execute in minecraft:overworld if block ~ ~ ~ powder_snow run function whs_world:dimension/lagmorphia/teleport_to/safety

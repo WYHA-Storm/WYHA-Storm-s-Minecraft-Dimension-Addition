@@ -1,0 +1,194 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 0,
+    "foliage_color": 0,
+    "ambient_sound": "ambient.soul_sand_valley.loop",
+    "mood_sound": {
+      "sound": "minecraft:entity.lightning_bolt.thunder",
+      "tick_delay": 200,
+      "block_search_extent": 0,
+      "offset": 0
+    },
+    "additions_sound": {
+      "sound": "ambient.soul_sand_valley.additions",
+      "tick_chance": 1
+    },
+    "music": {
+      "sound": "minecraft:music.nether.soul_sand_valley",
+      "min_delay": 120,
+      "max_delay": 120,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.005
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:stray",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:drowned",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 5
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:fossil_upper",
+      "minecraft:fossil_lower",
+      "minecraft:basalt_blobs",
+      "minecraft:basalt_pillar",
+      "minecraft:large_basalt_columns",
+      "minecraft:small_basalt_columns"
+    ],
+    [
+      {
+        "feature": "whs_world:skeleton_mega_carrot",
+        "placement": [
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "state": {
+                "Name": "minecraft:soul_fire"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "ignore_vines": true,
+            "force_dirt": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "min_clipped_height": 80,
+              "limit": 81,
+              "lower_size": 1,
+              "upper_size": 16
+            },
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:soul_soil"
+              }
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:bone_block",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:air"
+              }
+            },
+            "trunk_placer": {
+              "type": "minecraft:bending_trunk_placer",
+              "base_height": 5,
+              "height_rand_a": 2,
+              "height_rand_b": 0,
+              "bend_length": 1
+            },
+            "foliage_placer": {
+              "type": "minecraft:bush_foliage_placer",
+              "radius": 1,
+              "offset": 0,
+              "height": 1
+            },
+            "decorators": []
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "state": {
+                "Name": "minecraft:soul_fire"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_copper",
+      "minecraft:ore_soul_sand",
+      "minecraft:patch_soul_fire"
+    ],
+    [
+      "minecraft:ore_soul_sand",
+      "minecraft:patch_soul_fire"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

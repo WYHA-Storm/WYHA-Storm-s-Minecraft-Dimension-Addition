@@ -1,0 +1,1 @@
+execute at @e if block ~ ~ ~ minecraft:powder_snow if block ~ ~-1 ~ minecraft:chiseled_deepslate in whs_world:lagmorphia run tp @n ~ 300 ~

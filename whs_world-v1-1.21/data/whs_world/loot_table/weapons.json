@@ -1,0 +1,144 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_randomly"
+        },
+        {
+          "function": "minecraft:set_attributes",
+          "modifiers": [
+            {
+              "id": "minecraft:generic.attack_damage",
+              "attribute": "minecraft:generic.attack_damage",
+              "amount": {
+                "min": 0,
+                "max": 30
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "id": "minecraft:generic.attack_knockback",
+              "attribute": "minecraft:generic.attack_knockback",
+              "amount": {
+                "min": 0,
+                "max": 5
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "id": "minecraft:generic.attack_speed",
+              "attribute": "minecraft:generic.attack_speed",
+              "amount": {
+                "min": 1,
+                "max": 1024
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "id": "minecraft:generic.luck",
+              "attribute": "minecraft:generic.luck",
+              "amount": {
+                "min": 0,
+                "max": 1024
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "id": "minecraft:zombie.spawn_reinforcements",
+              "attribute": "minecraft:zombie.spawn_reinforcements",
+              "amount": {
+                "min": 0,
+                "max": 1
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            },
+            {
+              "id": "minecraft:generic.follow_range",
+              "attribute": "minecraft:generic.follow_range",
+              "amount": {
+                "min": 0,
+                "max": 2048
+              },
+              "operation": "add_value",
+              "slot": "mainhand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

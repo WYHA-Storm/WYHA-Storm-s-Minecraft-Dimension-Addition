@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rabbit",
+    "minecraft:allay",
+    "minecraft:villager",
+    "minecraft:iron_golem",
+    "minecraft:snow_golem",
+    "minecraft:stray",
+    "minecraft:drowned"
+  ]
+}

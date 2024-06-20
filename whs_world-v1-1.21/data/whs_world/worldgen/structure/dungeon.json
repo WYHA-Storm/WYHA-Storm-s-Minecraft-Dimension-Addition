@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "whs_world:lagmorphian_woods",
+    "whs_world:lagmorphian_peaks",
+    "whs_world:lagmorphian_plains",
+    "whs_world:lagmorphian_forbidden_fjord"
+  ],
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "bury",
+  "start_pool": "whs_world:dungeon",
+  "size": 12,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 0
+    },
+    "max_inclusive": {
+      "absolute": 0
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": true,
+  "dimension_padding": 5,
+  "liquid_settings": "ignore_waterlogging"
+}
